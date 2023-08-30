@@ -32,12 +32,12 @@ const App = () => {
 export default App;
 
 //Below is the second way which involve the use of hooks.
-import { useGetContextHook } from "./ContextApi/GloabalState";
+// import { useGetContextHook } from "./ContextApi/GloabalState";
 
-const Apps = () => {
-  return (
-    <useGetContextHook>
-      //you wrap all your component which give the access to the state
-    </useGetContextHook>
-  );
-};
+// const Apps = () => {
+//   return (
+//     <useGetContextHook>
+//       //you wrap all your component which give the access to the state
+//     </useGetContextHook>
+//   );
+// };
