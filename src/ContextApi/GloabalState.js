@@ -8,12 +8,12 @@ export const useGetContextHook = ({ children }) => {
   //within your app
   const contextWithHook = createContext();
 
-  const [gameState, setGameState] = useState("mainMenu");
+  const [gameStates, setGameStates] = useState("mainMenu");
   const [scores, setScores] = useState(0);
 
   return (
     <contextWithHook.Provider
-      value={{ gameState, setGameState, scores, setScores }}
+      value={{ gameStates, setGameStates, scores, setScores }}
     >
       {childdren}
     </contextWithHook.Provider>
